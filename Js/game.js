@@ -23,26 +23,26 @@ function preload() {
     //Carga el fondo
 	game.load.image('bg','Assets/Images/Title.png');
     game.load.image('bg1','Assets/Images/Background.png'); // fondo
-    game.load.image('bt1_spanish','Assets/Images/es/BTN1.png');
-    game.load.image('next_spanish','Assets/Images/es/next.png');
-    game.load.image('c1_spanish','Assets/Images/es/rubio.png');
-    game.load.image('c1x_spanish','Assets/Images/es/rubiox.png');
-    game.load.image('c2_spanish','Assets/Images/es/negro.png');
-    game.load.image('c2x_spanish','Assets/Images/es/negrox.png');
-    game.load.image('r1_spanish','Assets/Images/es/rojo.png');
-    game.load.image('r1x_spanish','Assets/Images/es/rojox.png');
-    game.load.image('r2_spanish','Assets/Images/es/azul.png');
-    game.load.image('r2x_spanish','Assets/Images/es/azulx.png');
-    game.load.image('bt1_english','Assets/Images/en/BTN1.png'); // BOTON 1 IMAGEN
-    game.load.image('next_english','Assets/Images/en/next.png');
-    game.load.image('c1_english','Assets/Images/en/rubio.png');
-    game.load.image('c1x_english','Assets/Images/en/rubiox.png');
-    game.load.image('c2_english','Assets/Images/en/negro.png');
-    game.load.image('c2x_english','Assets/Images/en/negrox.png');
-    game.load.image('r1_english','Assets/Images/en/rojo.png');
-    game.load.image('r1x_english','Assets/Images/en/rojox.png');
-    game.load.image('r2_english','Assets/Images/en/azul.png');
-    game.load.image('r2x_english','Assets/Images/en/azulx.png');
+    game.load.image('bt1_spanish','Assets/Images/Es/BTN1.png');
+    game.load.image('next_spanish','Assets/Images/Es/next.png');
+    game.load.image('c1_spanish','Assets/Images/Es/rubio.png');
+    game.load.image('c1x_spanish','Assets/Images/Es/rubiox.png');
+    game.load.image('c2_spanish','Assets/Images/Es/negro.png');
+    game.load.image('c2x_spanish','Assets/Images/Es/negrox.png');
+    game.load.image('r1_spanish','Assets/Images/Es/rojo.png');
+    game.load.image('r1x_spanish','Assets/Images/Es/rojox.png');
+    game.load.image('r2_spanish','Assets/Images/Es/azul.png');
+    game.load.image('r2x_spanish','Assets/Images/Es/azulx.png');
+    game.load.image('bt1_english','Assets/Images/En/BTN1.png'); // BOTON 1 IMAGEN
+    game.load.image('next_english','Assets/Images/En/next.png');
+    game.load.image('c1_english','Assets/Images/En/rubio.png');
+    game.load.image('c1x_english','Assets/Images/En/rubiox.png');
+    game.load.image('c2_english','Assets/Images/En/negro.png');
+    game.load.image('c2x_english','Assets/Images/En/negrox.png');
+    game.load.image('r1_english','Assets/Images/En/rojo.png');
+    game.load.image('r1x_english','Assets/Images/En/rojox.png');
+    game.load.image('r2_english','Assets/Images/En/azul.png');
+    game.load.image('r2x_english','Assets/Images/En/azulx.png');
     //Carga idiomas
     game.load.image('spanish','Assets/Images/spanish.png');
     game.load.image('english','Assets/Images/english.png');
