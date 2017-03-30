@@ -13,6 +13,7 @@ var pjsex='f';
 var pjim;
 var pjh ='r';
 var pjw = 'r';
+var bgi;
 //Seleccionar region
 var imageRegion;
 var showRegion = 1;
@@ -67,6 +68,7 @@ function preload() {
     //Imagenes botones region
     game.load.image('ButtonRegLeft','Assets/Images/LeftButton.png');
     game.load.image('ButtonRegRight','Assets/Images/RightButton.png');
+    game.load.image('bth','Assets/Images/bth.png');
 }
 
 function create() {
@@ -78,7 +80,7 @@ function update(){
 }
 
 function intro(){
-    game.add.sprite(0, 0, 'bg'); //agregamos fondo  
+    bgi=game.add.sprite(0, 0, 'bg'); //agregamos fondo  
     button = game.add.button(game.world.centerX - 95, 550,'bt1_english', start, this, 2, 1, 0); 
      if (lenguage == 'ES') {
      text = game.add.text(16, 16, 'Bienvenido',{ fontSize: '32px', fill: '#000' }); 
@@ -320,6 +322,79 @@ function showImageRegion(){
     }
 }
 
+function backgroundMapImage(){
+    if (showRegion==1) {
+        bgi.loadTexture('Region1');
+    }
+    if (showRegion==2) {
+        bgi.loadTexture('Region2');
+    }
+    if (showRegion==3) {
+        bgi.loadTexture('Region3');
+    }
+    if (showRegion==4) {
+        bgi.loadTexture('Region4');
+    }
+    if (showRegion==5) {
+        bgi.loadTexture('Region5');
+    }
+}
+
 function selectRegion(){
+   game.world.remove(imageRegion);
+   game.world.remove(buttonRegRight);
+   game.world.remove(buttonRegLeft);
+   game.world.remove(texti);
+   game.world.remove(bts);
+   initHistoryMap();
+   
+    
+}
+
+function initHistoryMap(){
+
+if (showRegion==1) {
+    	bgi=game.add.sprite(0, 0, 'Region1');
+     }
+    if (showRegion==2) {
+        bgi=game.add.sprite(0, 0, 'Region2');
+    }
+    if (showRegion==3) {
+        bgi=game.add.sprite(0, 0, 'Region3');
+    }
+    if (showRegion==4) {
+        bgi=game.add.sprite(0, 0, 'Region4');
+    }
+    if (showRegion==5) {
+        bgi=game.add.sprite(0, 0, 'Region5');
+    }
+
+    bts = game.add.button(16, 550,'next_english', startHistory, this, 2, 1, 0);  
     bts.inputEnabled = false;
+    
+    if (lenguage == 'ES') {  
+        bts.loadTexture('next_spanish');
+    }
+     if (lenguage == 'EN') {
+        bts.loadTexture('next_english');
+    } 
+
+   bth1 = game.add.button(375, 200,'bth', startHistory, this, 2, 1, 0);
+   bth1.inputEnabled = false;
+   bth2 = game.add.button(575, 200,'bth', startHistory, this, 2, 1, 0);
+   bth2.inputEnabled = false;
+   bth3 = game.add.button(175, 400,'bth', startHistory, this, 2, 1, 0);
+   bth3.inputEnabled = false;
+   bth4 = game.add.button(375, 400,'bth', startHistory, this, 2, 1, 0);
+   bth4.inputEnabled = false;
+   bth5 = game.add.button(575, 400,'bth', startHistory, this, 2, 1, 0); 
+   bth5.inputEnabled = false;
+
+
+
+
+}
+
+function startHistory(){
+	
 }
